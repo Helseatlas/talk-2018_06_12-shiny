@@ -23,23 +23,18 @@ background-image: url(bg_wide.png)
 ---
 template: front
 
-.title[My title]
+.title[RShiny ved SKDE]
 
-.subtitle[Subtitle]
+.subtitle[Bruk og erfaringer]
 
-.author[Jane Doe]
+.author[Arnfinn Hykkerud Steindal]
 
 ---
 template: normal
 
-# Slide 1
+# Tabellverket
 
-## Subttile
-
-Some text
-
-- list
-- more list
+<iframe src="https://skde.shinyapps.io/tabellverk/">Tabellverk </iframe>
 
 ---
 template: normal
