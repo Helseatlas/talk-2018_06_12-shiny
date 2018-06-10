@@ -30,36 +30,132 @@ template: front
 .author[Arnfinn Hykkerud Steindal]
 
 ---
-template: normal
+template: front
 
 # Tabellverket
 
-<iframe src="https://skde.shinyapps.io/tabellverk/">Tabellverk </iframe>
+.footnote[[https://skde.shinyapps.io/tabellverk](https://skde.shinyapps.io/tabellverk)]
+
+---
+template: blank
+
+<iframe src="https://skde.shinyapps.io/tabellverk/" style="height:550px;width:1050px;">Tabellverk </iframe>
+
+[https://skde.shinyapps.io/tabellverk](https://skde.shinyapps.io/tabellverk)
+
+---
+template: blank
+
+<iframe src="https://skde.shinyapps.io/iframe" style="height:550px;width:1050px;">Tabellverk </iframe>
+
+[https://skde.shinyapps.io/iframe](https://skde.shinyapps.io/iframe)
+
+---
+template: front
+
+# R-pakke
 
 ---
 template: normal
 
-# Slide 2
+# R-pakke
 
 .left-column[
-## Title left
+## Hvorfor?
+]
+
+.right-column[
+### Skiller data fra kode
+###  Kan enkelt brukes på flere prosjekter
+###  Kan testes
+
+]
+
+---
+template: normal
+
+# R-pakke
+
+.left-column[
+## Splitt data og kode
 ]
 
 
 .right-column[
-Some text to the right
-
-- list right
-- more list
-
+```R
+# Installer pakke
+devtools::install_github("Helseatlas/shinymap")
+# Les inn helseatlas-data
+mydata <- readRDS("data.rds")
+# Kart
+kartdata <- "<some-map-file>"
+# Send opp til shinyapp.io
+shinymap::submit_application(dataset = mydata, name = "kols", map = kartdata, ...)
+```
 ]
+
+---
+template: normal
+
+# R-pakke
+
+.left-column[
+## Innhold i pakken
+]
+
+.right-column[
+```
+R/
+  launch_application.R
+data/
+     kols.RData
+inst/
+     app/
+         server.R 
+         ui.R
+         www/
+man/
+    create_appDir.Rd
+    launch_application.Rd
+    submit_application.Rd
+tests/
+      testthat.R
+      testthat/
+               data/
+               test_launch.R
+.Rbuildignore
+.gitignore
+.travis.yml
+DESCRIPTION
+LICENSE
+NAMESPACE
+README.md
+```
+]
+
+---
+# Git og Github
+
+
+
+
 
 ---
 template: reduced
 
-# Slide with .svart[image]
+# `git` i RStudio
 
-.right[![Right-aligned image](https://images-na.ssl-images-amazon.com/images/G/01/img15/pet-products/small-tiles/23695_pets_vertical_store_dogs_small_tile_8._CB312176604_.jpg)]
+.left-column[
+
+]
+
+
+.right-column[
+
+.right[![Right-aligned image](fig/git_rstudio.png)]
+
+]
+
 
 
 
