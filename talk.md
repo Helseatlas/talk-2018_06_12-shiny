@@ -137,7 +137,7 @@ README.md
 # Git og Github
 
 
-
+### [https://github.com/Helseatlas/shinymap](https://github.com/Helseatlas/shinymap)
 
 
 ---
@@ -155,6 +155,8 @@ template: reduced
 .right[![Right-aligned image](fig/git_rstudio.png)]
 
 ]
+
+
 
 
 
