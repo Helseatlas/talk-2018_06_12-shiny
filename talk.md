@@ -141,6 +141,19 @@ README.md
 
 
 ---
+template: blank
+class: center, middle
+
+<img src="fig/git1.png?1" style="height: 500px;"/>
+
+
+---
+template: blank
+class: center, middle
+
+<img src="fig/git2.png?1" style="height: 500px;"/>
+
+---
 template: reduced
 
 # `git` i RStudio
