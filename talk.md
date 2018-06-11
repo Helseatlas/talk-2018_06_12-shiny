@@ -110,7 +110,7 @@ R/
 data/
      kols.RData
 inst/
-     app/
+     app/ 
          server.R 
          ui.R
          www/
@@ -152,24 +152,6 @@ template: blank
 class: center, middle
 
 <img src="fig/git2.png?1" style="height: 500px;"/>
-
----
-template: reduced
-
-# `git` i RStudio
-
-.left-column[
-
-]
-
-
-.right-column[
-
-.right[![Right-aligned image](fig/git_rstudio.png)]
-
-]
-
-
 
 
 
